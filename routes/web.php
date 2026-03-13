@@ -16,4 +16,4 @@ Route::get('/event/create', [EventController::class, 'create']);
 Route::post('/event/store', [EventController::class, 'store']);
 Route::post('/ticket/store', [TicketController::class, 'store']);
 Route::get('/register', [RegistrationController::class, 'index']);
-
+Route::post('/register/store', [RegistrationController::class, 'store']);
