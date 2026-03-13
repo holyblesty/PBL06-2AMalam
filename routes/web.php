@@ -10,4 +10,5 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/event', [EventController::class, 'index']);
+Route::get('/event/create', [EventController::class, 'create']);
 
