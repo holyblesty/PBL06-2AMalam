@@ -6,7 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\RegistrationController;
-
+use App\Http\Controllers\PageController;
 
 Route::get('/', function () {
     return redirect('/login');
@@ -23,3 +23,4 @@ Route::post('/event/store', [EventController::class, 'store']);
 Route::post('/ticket/store', [TicketController::class, 'store']);
 Route::get('/register', [RegistrationController::class, 'index']);
 Route::post('/register/store', [RegistrationController::class, 'store']);
+Route::get('/about', [PageController::class, 'about']);
